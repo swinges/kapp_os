@@ -59,14 +59,18 @@ class HomeSplash extends React.Component {
     );
 
     return (
+      <Container background="light">
       <SplashContainer>
         <div className="inner">
-          <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
-          <PromoSection>
-            <Button href="#try">Get Started Now</Button>
-          </PromoSection>
+              
+              <img src={siteConfig.baseUrl + 'img/Kubernetes_logo_without_workmark.svg'} alt="Logo" width="150" height="140" />
+              <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
+              <PromoSection>
+                <Button href="#try">Get Started Now</Button>
+              </PromoSection>
         </div>
       </SplashContainer>
+      </Container>
     );
   }
 }
@@ -89,6 +93,14 @@ class Index extends React.Component {
       </Container>
     );
 
+    const Button = props => (
+      <div className="pluginWrapper buttonWrapper">
+        <a className="button" href={props.href} target={props.target}>
+          {props.children}
+        </a>
+      </div>
+    );
+    
     const FeatureCallout = () => (
       <div
         className="productShowcaseSection paddingBottom"
@@ -99,29 +111,27 @@ class Index extends React.Component {
     );
 
     const TryOut = () => (
-      <Block id="try">
+      <Block background="dark" id="try">
         {[
           {
             content:
               'Kalm contains basic and advanced deployment configurations powered by Istio. Easily maximize your uptime, roll out new features safely, scale your appication, and rollback as needed. ',
-            image: `${baseUrl}img/undraw_dev_productivity_umsq.svg`,
+            image: `${baseUrl}img/node_scheduling.png`,
             imageAlign: 'left',
-            title: 'Next Generation Deployment',
+            title: 'Deploy With Power',
           },
         ]}
       </Block>
     );
 
     const Description = () => (
-      <Block background="dark">
+      <Block background="light">
         {[
           {
-            content:
-              'This area will show our tiered pricing system',
-            title: 'Pricing',
           },
         ]}
       </Block>
+      
     );
 
     const LearnHow = () => (
@@ -129,10 +139,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Kalm is designed to work with managed Kubernetes systems, so you can bring your own cluster with Google, Amazon, Azure, and many more. Applications can be setup in minutes. Easily manage secrets, configs, auto-healing probes, domain route SSL, and more.',
-            image: `${baseUrl}img/undraw_super_thank_you_obwk.svg`,
+              'Highly configurable automated health checks help keep your application running smoothly.',
+            image: `${baseUrl}img/health_setup2.png`,
             imageAlign: 'right',
-            title: 'Developers First',
+            title: 'Automated Health Checks',
           },
         ]}
       </Block>
@@ -190,7 +200,8 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <Features />
+          {/* <Features />
+            commenting this part out for now*/}
           <FeatureCallout />
           <LearnHow />
           <TryOut />

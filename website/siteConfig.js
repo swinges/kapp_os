@@ -24,13 +24,13 @@ const siteConfig = {
   title: 'Kalm', // Title for your website.
   tagline: 'An intuitive GUI that makes it easier to weild the full power of Kubernetes and Istio',
   url: 'https://swinges.github.io/', // Your website URL
-  baseUrl: '/kapp_sass/', // Base URL for your project */
+  baseUrl: '/kapp_os/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'kapp_sass',
+  projectName: 'kapp_os',
   organizationName: 'swinges',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
@@ -42,7 +42,7 @@ const siteConfig = {
     // {doc: 'doc4', label: 'API'},
     // {page: 'help', label: 'Help'},
     {href: "https://github.com/", label: "Live Demo"},
-    {href: "https://github.com/swinges/kapp_sass", label: "Github"},
+    {href: "https://github.com/swinges/kapp_os", label: "Github"},
     {href: "https://github.com/", label: "Login"}
   ],
 

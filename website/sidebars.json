@@ -1,29 +1,29 @@
 {
   "docs": {
     "Getting Started": [
-      "intro": ["gettingStarted1"],
-      "install": ["gettingStarted2"],
-      "configure": ["gettingStarted3"]
+      "intro",
+      "install",
+      "configure"
     ],
     "Basic Tutorial": [
-      "tut-overview": ["tutorial1"],
-      "tut-create": ["tutorial2"],
-      "tut-deploy": ["tutorial3"],
-      "tut-scale": ["tutorial4"],
-      "tut-rollback": ["tutorial5"]
+      "tut-overview",
+      "tut-create",
+      "tut-deploy",
+      "tut-scale",
+      "tut-rollback"
     ],
     "Guides": [
-      "guide-https": ["guide1"],
-      "guide-google": ["guide2"]
+      "guide-https",
+      "guide-google"
     ],
     "FAQ": [
-      "faq-permissions": ["faq1"],
-      "faq-auth": ["faq2"]
+      "faq-permissions",
+      "faq-auth"
     ]
   },
   "api": {
     "API Reference": [
-      "api1": ["api1"]
+      "api1"
     ]
   }
 }
