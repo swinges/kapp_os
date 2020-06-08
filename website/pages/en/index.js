@@ -92,14 +92,6 @@ class Index extends React.Component {
         />
       </Container>
     );
-
-    const Button = props => (
-      <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={props.href} target={props.target}>
-          {props.children}
-        </a>
-      </div>
-    );
     
     const FeatureCallout = () => (
       <div
@@ -116,8 +108,8 @@ class Index extends React.Component {
           {
             content:
               'Kalm contains basic and advanced deployment configurations powered by Istio. Easily maximize your uptime, roll out new features safely, scale your appication, and rollback as needed. ',
-            image: `${baseUrl}img/node_scheduling.png`,
-            imageAlign: 'left',
+            image: `${baseUrl}img/node_scheduling2.png`,
+            imageAlign: 'right',
             title: 'Deploy With Power',
           },
         ]}
@@ -140,9 +132,37 @@ class Index extends React.Component {
           {
             content:
               'Highly configurable automated health checks help keep your application running smoothly.',
-            image: `${baseUrl}img/health_setup2.png`,
+            image: `${baseUrl}img/health_setup4.png`,
             imageAlign: 'right',
             title: 'Automated Health Checks',
+          },
+        ]}
+      </Block>
+    );
+
+    const Story3 = () => (
+      <Block background="light">
+        {[
+          {
+            content:
+              'Highly configurable automated health checks help keep your application running smoothly.',
+            image: `${baseUrl}img/health_setup2.png`,
+            imageAlign: 'right',
+            title: 'Part 3 of the story',
+          },
+        ]}
+      </Block>
+    );
+
+    const Story4 = () => (
+      <Block background="dark">
+        {[
+          {
+            content:
+              'Highly configurable automated health checks help keep your application running smoothly.',
+            image: `${baseUrl}img/health_setup2.png`,
+            imageAlign: 'right',
+            title: 'Part 4 of the story',
           },
         ]}
       </Block>
@@ -205,6 +225,8 @@ class Index extends React.Component {
           <FeatureCallout />
           <LearnHow />
           <TryOut />
+          <Story3 />
+          <Story4 />
           <Description />
           <Showcase />
         </div>
