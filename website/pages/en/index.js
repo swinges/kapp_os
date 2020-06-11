@@ -59,7 +59,7 @@ class HomeSplash extends React.Component {
     );
 
     return (
-      <Container background="light">
+      <Container background="dark">
       <SplashContainer>
         <div className="inner">
               
@@ -86,7 +86,7 @@ class Index extends React.Component {
         id={props.id}
         background={props.background}>
         <GridBlock
-          align="center"
+          align="left"
           contents={props.children}
           layout={props.layout}
         />
@@ -131,10 +131,24 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Highly configurable automated health checks help keep your application running smoothly.',
-            image: `${baseUrl}img/health_setup4.png`,
+              'Application setup in KAPP is quick and easy. Rather than hacking through complex yaml files, you can deploy and manage your entire applicatoin through the KAPP gui.',
+            image: `${baseUrl}img/AppCreation1.svg`,
             imageAlign: 'right',
-            title: 'Automated Health Checks',
+            title: 'Create and import applications easily',
+          },
+        ]}
+      </Block>
+    );
+    
+    const Story2 = () => (
+      <Block background="dark">
+        {[
+          {
+            content:
+              'Organize your application into highly customizable component images. Server (continuous) and cron jobs are both supported.',
+            image: `${baseUrl}img/ComponentCreation2.svg`,
+            imageAlign: 'right',
+            title: 'Quickly upload and manage application components',
           },
         ]}
       </Block>
@@ -145,10 +159,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Highly configurable automated health checks help keep your application running smoothly.',
-            image: `${baseUrl}img/health_setup2.png`,
+              'You can config your environment so you can rock out like a pro. Config your config for config dawg. So many cool features it be like whoa!',
+            image: `${baseUrl}img/Configs3.svg`,
             imageAlign: 'right',
-            title: 'Part 3 of the story',
+            title: 'Configs and Environment Variables Rock',
           },
         ]}
       </Block>
@@ -159,10 +173,24 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Highly configurable automated health checks help keep your application running smoothly.',
-            image: `${baseUrl}img/health_setup2.png`,
+              'We love routes. We think routes are the shit and so should you. Here are a couple things that make routes on KAPP the bees knees',
+            image: `${baseUrl}img/Routes4.svg`,
             imageAlign: 'right',
-            title: 'Part 4 of the story',
+            title: 'Routes are awesome',
+          },
+        ]}
+      </Block>
+    );
+    
+    const Story5 = () => (
+      <Block background="light">
+        {[
+          {
+            content:
+              'Check out this dashboard. It is epic. Look at the pretty graphs. Much awesome. Much wow. Very excite.',
+            image: `${baseUrl}img/Dashboard5.svg`,
+            imageAlign: 'right',
+            title: 'Ultimate Dashboardy',
           },
         ]}
       </Block>
@@ -224,9 +252,11 @@ class Index extends React.Component {
             commenting this part out for now*/}
           <FeatureCallout />
           <LearnHow />
-          <TryOut />
+          <Story2 />
           <Story3 />
           <Story4 />
+          <Story5 />
+          <TryOut />
           <Description />
           <Showcase />
         </div>
