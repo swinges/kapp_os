@@ -50,24 +50,15 @@ class HomeSplash extends React.Component {
       </div>
     );
 
-    const Button = props => (
-      <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={props.href} target={props.target}>
-          {props.children}
-        </a>
-      </div>
-    );
-
     return (
-      <Container background="dark">
+      <Container background="light">
       <SplashContainer>
         <div className="inner">
-              
-              <img src={siteConfig.baseUrl + 'img/Kubernetes_logo_without_workmark.svg'} alt="Logo" width="150" height="140" />
-              <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
-              <PromoSection>
-                <Button href="#try">Get Started Now</Button>
-              </PromoSection>
+          {/* <img src={siteConfig.baseUrl + 'img/Kubernetes_logo_without_workmark.svg'} alt="Logo" width="150" height="140" /> */}
+          <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
+          <PromoSection>
+            <button className="call-to-action" href="#try">Get Started Now</button>
+          </PromoSection>
         </div>
       </SplashContainer>
       </Container>
