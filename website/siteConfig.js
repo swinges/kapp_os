@@ -24,7 +24,7 @@ const siteConfig = {
   title: 'Kalm', // Title for your website.
   tagline: 'An intuitive GUI that makes it easier to weild the full power of Kubernetes and Istio',
   url: 'https://swinges.github.io', // Your website URL
-  baseUrl: '/kapp_os/', // Base URL for your project */
+  baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
